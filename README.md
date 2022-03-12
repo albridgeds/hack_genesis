@@ -1,17 +1,15 @@
 # Hack.Genesis
-MAD Team
-Решение задачи для компании Accenture
+"MAD Team" desicion for Accenture task
 
-Анализ данных и обучение модели:
-accenture.ipynb
+accenture.ipynb - data analisys and model training
 
-Приложение:
-- main.py - главный файл, бюджет промоакций определяется в переменной budget
-- generate_calend.py - генератор календарей промоакций
-- use_lgbm.py - прогноз продаж для конкретного календаря промоакции
-- const.py - константы
-- директория data:
-  - mean_sales_roll.csv - усредненные и сглаженые исторические данные о продажах, сгруппированные по неделям и товарам 
-  - lgb_booster - обученная модель
-  - %calendar.xlsx - рекомендуемая приложением конфигурация промоакций (величины промоакции даны в процентах)
-  - %prediction.xlsx - прогноз продаж по каждому товару с учетом промоакций
+Application:
+- main.py
+- generate_calend.py - generates promo configurations (dates and discount values in percents)
+- use_lgbm.py - calculates sales forecast for chosen promo configuration
+- const.py - all the constants
+- "data" folder:
+  - mean_sales_roll.csv - rolled sales data being grouped by weeks and goods 
+  - lgb_booster - trained model
+  - %calendar.xlsx - the best found promo configuration (discount values are given in percents)
+  - %prediction.xlsx - sales forecast by goods accounting the impact of best found promo configuration
